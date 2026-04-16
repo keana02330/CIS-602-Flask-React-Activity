@@ -3,7 +3,11 @@ import sqlite3
 from flask_cors import CORS, cross_origin
 
 
-app = Flask(__name__)
+app = Flask(
+    __name__,
+    template_folder='dist',
+    static_folder='dist/assets'
+)
 # app = Flask(__name__, 
 #             template_folder='.',
 #             static_folder='./')
@@ -102,4 +106,4 @@ def index():
     return render_template('index.html')
 
 if __name__ == '__main__':
-    app.run(debug=True,host="0.0.0.0",port=5000)
+    app.run(debug=True,host="0.0.0.0",port=5001)
