@@ -14,7 +14,6 @@
 In this project I have edited the `vite.config.js` file and made sure when the build is ran, it created the static output in the dist folder at the same level with the Python app.py. There is no need to modify the `vite.config.js`, unless you change the port number.
 
 ```json
-
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
@@ -30,7 +29,6 @@ export default defineConfig({
     outDir: '../../dist',
   }
 })
-
 ```
 
 The frontend is based on React library. The steps to run the application are as follows:
